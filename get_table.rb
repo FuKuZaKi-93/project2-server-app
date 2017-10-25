@@ -9,7 +9,13 @@ doc = Nokogiri::HTML(html)
 # 下の行をコメントアウトすると、pryが起動する
 # binding.pry
 
+
 # 例：h2要素のみを抜き出す
-doc.css('h2').each do |node|
+#doc.css('h2').each do |node|
+#  puts node.text
+#end
+
+# 表の抜き出し
+doc.css('table').each do |node|
   puts node.text
 end
