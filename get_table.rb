@@ -15,6 +15,7 @@ doc = Nokogiri::HTML(html)
 #  puts node.text
 #end
 
+
 # 表の抜き出し
 doc.css('table').each do |node|
   puts node.text
